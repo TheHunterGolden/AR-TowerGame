@@ -16,6 +16,7 @@ public class InRangeAttacker : MonoBehaviour {
 
 	void Start () {
 		finalDestination = GetComponent<AttackerAI> ().destination;
+		state = State.WALK;
 	}
 	
 	// Update is called once per frame

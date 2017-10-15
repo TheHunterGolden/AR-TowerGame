@@ -30,7 +30,7 @@ public class DefenderAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		SetDestination ();
 	}
 
 	public void SetDestination() {
