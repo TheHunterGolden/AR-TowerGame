@@ -19,7 +19,9 @@ public class DefenderAI : MonoBehaviour {
 		
 		
 		hp = 10;
+
 		agent = this.GetComponent<NavMeshAgent> ();
+		agent.Warp (destination.position);
 		if (agent == null) {
 			Debug.Log ("AGENT NOT FOUND");
 		}
@@ -30,7 +32,7 @@ public class DefenderAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		SetDestination ();
+		//SetDestination ();
 	}
 
 	public void SetDestination() {
